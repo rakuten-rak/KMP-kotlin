@@ -1,0 +1,3 @@
+[submodule "KMP-kotlin"]
+	path = KMP-kotlin
+	url = https://github.com/rakuten-rak/KMP-kotlin.git

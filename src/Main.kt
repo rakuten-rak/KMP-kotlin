@@ -81,6 +81,10 @@ fun main(args: Array<String>) {
     val someString = "some not empty text";
     println(someString.isNotEmpty())
 
+    var aNullablestring: String? = null;
+//    aNullablestring = "";
+//    we can also add !! for non nullable
+println(aNullablestring?.length ?: "the value is null") // this is the Elvis operator...
 
 
 

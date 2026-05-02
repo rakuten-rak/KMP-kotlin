@@ -49,6 +49,37 @@ fun main(args: Array<String>) {
     100_000_000.toByte();
 
 
+    val aChar: Char = 'a';
+    val anotherChar = '1'
+    val charInNumber = '\n'
+
+    val aString: String = "Hello World";
+    val escaped = "hello \n world";
+
+    val raw = """
+        Some 
+            multiple 
+     string i just shown 
+            works as 
+                    seen
+    """;
+    println(raw)
+    val rawMargin = """
+        
+        |Some 
+        |
+        >> arrow
+            multiple 
+     |string i just shown 
+            works as 
+                    |seen
+    """.trimMargin(marginPrefix = ">>"); // this removes all pipes attached to the word or string
+    println(rawMargin);
+    val aNumber = 10;
+    val cancateTemplate = "the number ${ 1 + aNumber}";
+
+    val someString = "some not empty text";
+    println(someString.isNotEmpty())
 
 
 

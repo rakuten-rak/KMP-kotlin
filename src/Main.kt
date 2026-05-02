@@ -20,4 +20,37 @@ fun main(args: Array<String>) {
 
     println(ourFirstVariable === true)
     println(ourFirstVariable == false)
+
+    val aInt:Int = 0;
+    val anOtherInt = 0;
+
+    val aByte: Byte = 0;
+    val aShort:Short = 0;
+
+    val aLong: Long  = 0;
+    val inferredInt = 10;
+    val inferredLong = 1000000;
+
+    val anotherLong = 10L;
+    val unsignedInt: UInt = 0U;
+
+    val anotherUnsignedInt = 0U;
+    val unsignedLong = 0UL;
+
+    val aDouble:Double = 5.5;
+    val aFloat:Float = 5F
+
+    val inferredDouble = 5.5;
+    val inferredFloat = 5.5F;
+
+    println(10.5.toInt());
+    10.9.toFloat();
+    10.toULong();
+    100_000_000.toByte();
+
+
+
+
+
+
 }

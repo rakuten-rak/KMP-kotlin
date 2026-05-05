@@ -3,7 +3,17 @@ fun getMessage(v:Int) : String{
 }
 fun GetMessage(v:Int) : String =if (v > 0){"the value is greater than 0"}else{"the value is lesser than 0"}
 
+// smart casting
+fun checkType(xInput: Any?): Unit {
+    if (xInput == null) return
+    if(xInput is String?) {
+        "the value is a string with a lenght of ${xInput.length}"
+    }
+    if(xInput !is Int) {
+        "the value is not an Int"
+    }
 
+}
 
 fun main () {
     var someVariable = 0;
@@ -42,5 +52,12 @@ fun main () {
     }
     catch (e: IllegalStateException){
         "error thrown"
+    }
+    // smart casting
+
+    val aGenericValue:Any = 5;
+    val number:Int = aGenericValue as Int;
+
+
     }
 }

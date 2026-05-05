@@ -24,4 +24,11 @@ fun greetingOfArray(greet: String,vararg items:Any){
     items.forEach { "" +
             "$greet $it" }
 
+
+    // List...
+    val listOfString: List<String> = listOf<String>("kotlin","code","perfect")
+    val emptyStringLists = emptyList<String>()
+    val language = mutableListOf("kotlin","java")
+
+
 }

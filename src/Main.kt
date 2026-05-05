@@ -1,6 +1,14 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-fun main(args: Array<String>) {
+fun getGreeting():String{
+    return  "Hello Kotlin!";
+}
+// single expression function
+fun Greeting() = "single expression funtion";
+private  fun printGreeting() = println("Hello Kotlin Dev");
+fun main(args: Array<String>): Unit {
+    Greeting();
+    fun getGreeting() ="hello kotlin dev" // called local func or think private...
 //    val name = "Kotlin"
 //    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
 //    // to see how IntelliJ IDEA suggests fixing it.

@@ -1,5 +1,16 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+  // functional types...
+//  var greetingFunction:() -> Unit = {
+//      println("Hello world")
+//  }
+var greetingFunction:(String) -> String = { thingsToGreet ->
+//    println("Hello world")
+    // so in a lambda we implicitly return the last word without explicitly calling the return keyword
+
+//     "Hello $it";
+    "Hey there $thingsToGreet"
+}
+
+
 fun getGreeting():String{
     return  "Hello Kotlin!";
 }
@@ -7,6 +18,16 @@ fun getGreeting():String{
 fun Greeting() = "single expression funtion";
 private  fun printGreeting() = println("Hello Kotlin Dev");
 fun main(args: Array<String>): Unit {
+    // functional types
+    greetingFunction()
+    // reassign func
+    greetingFunction = {
+//        println("hello world")
+        "hello you are welcome"
+    }
+    greetingFunction.invoke("there")
+
+
     Greeting();
     //fun getGreeting() ="hello kotlin dev" // called local func or think private...
 

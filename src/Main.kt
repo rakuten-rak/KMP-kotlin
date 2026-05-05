@@ -38,8 +38,15 @@ fun greetingOfArray(greet: String,vararg items:Any){
     val changeTheaMutableSetType: MutableSet<Int> = mutableSetOf(1,2,3,4,5,6,7)
     changeTheaMutableSetType.add(4);
 
-    val testScore = mapOf(Pair("lang","js"), Pair(1,3),"new" to "c++")
+//    val testScore = mapOf(Pair("lang","js"), Pair(1,3),"new" to "c++")
+    val testScore = mutableMapOf(Pair("lang","js"), Pair(1,3),"new" to "c++")
 
+    testScore.keys.forEach { it
+    }
+//    val testScoreMutable = mutableMapOf(testScore)
+testScore["lang"] = "language"
+    testScore.put(222,33.5)
+    testScore.replace(1,10)
 
 
 }

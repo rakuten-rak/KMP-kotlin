@@ -52,5 +52,12 @@ testScore["lang"] = "language"
 
     groupCollection.filter { it.value >= 4 }.map { it.key }.sorted().forEach { it }
 
+    // Sequence
+
+    val langSequence = sequenceOf("java","c++","kotlin")
+    val langList = listOf(1,2,3).asSequence()
+    // use case for sequence when you have a 1000 of list
+    // not use case when dealing with a small amount of list
+
 
 }

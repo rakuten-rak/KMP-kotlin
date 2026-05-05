@@ -30,5 +30,16 @@ fun greetingOfArray(greet: String,vararg items:Any){
     val emptyStringLists = emptyList<String>()
     val language = mutableListOf("kotlin","java")
 
+    // Sets and Maps...
+
+    val aSettype = setOf<String>("c++","python","kotlin")
+    val aMutableSetType = mutableSetOf<Int>(1,2,3,4,5)
+    aMutableSetType.add(4);
+    val changeTheaMutableSetType: MutableSet<Int> = mutableSetOf(1,2,3,4,5,6,7)
+    changeTheaMutableSetType.add(4);
+
+    val testScore = mapOf(Pair("lang","js"), Pair(1,3),"new" to "c++")
+
+
 
 }

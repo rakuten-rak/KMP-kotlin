@@ -48,5 +48,9 @@ testScore["lang"] = "language"
     testScore.put(222,33.5)
     testScore.replace(1,10)
 
+    val groupCollection = mapOf("java" to 4,"c++" to 6,"python" to 9,"javascript" to 3)
+
+    groupCollection.filter { it.value >= 4 }.map { it.key }.sorted().forEach { it }
+
 
 }

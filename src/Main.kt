@@ -10,6 +10,11 @@ var greetingFunction:(String) -> String = { thingsToGreet ->
     "Hey there $thingsToGreet"
 }
 
+  // High order functions
+  fun printCalculatedValue(value1:Int, value2:Int,calculate:(Int,Int) ->Int){
+      println(calculate(value1,value2));
+  }
+
 
 fun getGreeting():String{
     return  "Hello Kotlin!";
@@ -18,8 +23,20 @@ fun getGreeting():String{
 fun Greeting() = "single expression funtion";
 private  fun printGreeting() = println("Hello Kotlin Dev");
 fun main(args: Array<String>): Unit {
+    // High order functions
+    printCalculatedValue(4,6,{val1,val2 ->
+//        (4+4)
+        val1 + val2
+    })
+    // trailing lambda in high order functions
+    printCalculatedValue(4,6){val1,val2 ->
+//        (4+4)
+        val1 + val2
+    }
+
+
     // functional types
-    greetingFunction()
+    greetingFunction("")
     // reassign func
     greetingFunction = {
 //        println("hello world")

@@ -59,5 +59,11 @@ fun main () {
     val number:Int = aGenericValue as Int;
 
 
-    }
+
+// For Loop
+for (i in 0 until 5){
+
+}
+    for( i in 10 downTo 0) i;
+
 }

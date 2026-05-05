@@ -5,7 +5,7 @@ fun GetMessage(v:Int) : String =if (v > 0){"the value is greater than 0"}else{"t
 
 
 
-fun main (){
+fun main () {
     var someVariable = 0;
     when {
         someVariable > 3 -> println("value is greater than 3")
@@ -30,5 +30,17 @@ fun main (){
         "the value is greater than 0"
     } else{"the value is lesser than 0"}
 
-    // the when also works with expression
+    // the when also works with expression.....|
+
+    // try and catch...
+    val except = try {
+        throw IllegalStateException()
+        "the value is ${10 / 0}"
+
+    }catch (e: ArithmeticException){
+        "math error"
+    }
+    catch (e: IllegalStateException){
+        "error thrown"
+    }
 }

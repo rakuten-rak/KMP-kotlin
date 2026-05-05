@@ -8,7 +8,13 @@ fun Greeting() = "single expression funtion";
 private  fun printGreeting() = println("Hello Kotlin Dev");
 fun main(args: Array<String>): Unit {
     Greeting();
-    fun getGreeting() ="hello kotlin dev" // called local func or think private...
+    //fun getGreeting() ="hello kotlin dev" // called local func or think private...
+
+    fun getGreeting(greeting : String = "hello", thingsToGreet: String = "World"){
+        println(greeting + thingsToGreet);
+
+    }
+println(getGreeting(thingsToGreet = "kotlin Dev..")) // name argument
 //    val name = "Kotlin"
 //    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
 //    // to see how IntelliJ IDEA suggests fixing it.

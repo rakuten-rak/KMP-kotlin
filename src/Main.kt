@@ -30,4 +30,25 @@ fun main(vararg  args: String){
 //    outputFile.writeText(sortedReadLines.toString())
     outputFile.writeLines(sortedReadLines)
 
+    // Parsing a list of a data from a file
+
+    print("Enter the name of the file:")
+    val inputName = readLine() ?: ""
+
+    val inputFileName = File(inputName)
+   val rawFile =  inputFileName.readLines()
+    val formatedFile = rawFile.map {
+        val splitForm = it.split(":")
+        splitForm[0] to splitForm[1]
+    }
+
+    val finalScore = formatedFile.sortedByDescending { it.second }.take(3)
+
+    val filePath = File("sorted-score.txt").toPath()
+    val finalOutputScore = finalScore.map { "${it.first}:${it.second}" }
+
+    filePath.writeLines(finalOutputScore)
+
+
+
 }

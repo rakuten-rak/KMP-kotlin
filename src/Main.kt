@@ -1,4 +1,5 @@
 import java.io.File
+import kotlin.io.path.writeLines
 
 fun main(vararg  args: String){
     if (args.isEmpty()) {
@@ -17,4 +18,16 @@ fun main(vararg  args: String){
     var isValidFile = File(filename).isFile
     if (isValidFile)  true;
     else false;
+
+    // read and write
+
+    val testScore= File("scores.txt")
+    testScore.forEachLine{println(it)}
+
+    var sortedReadLines = testScore.readLines().sorted()
+
+    var outputFile = File("scoreOutput.txt").toPath()
+//    outputFile.writeText(sortedReadLines.toString())
+    outputFile.writeLines(sortedReadLines)
+
 }
